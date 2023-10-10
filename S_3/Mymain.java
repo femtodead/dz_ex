@@ -7,9 +7,10 @@ import java.util.Scanner;
 public class Mymain {
     public static void main(String[] args) {
 
-        String[] mylist = length_check(scan_str());
-        int[] inx = checInxFio(mylist, data_check(mylist), chec_num_phone(mylist), gender_check(mylist));
-        Write(mylist, inx);
+        String[] mylist = length_check(scan_str());// длинны массива
+        int[] inx = checInxFio(mylist, data_check(mylist), chec_num_phone(mylist), gender_check(mylist));// здест сразу несколько проверок, проверка даты, телефона и пола, по мимо этого 
+        // каждый из методов возвращает индекс на котором стоит, checInxFio возвращает массив индаксов которые будут испольльзоваться при записи в файл 
+        Write(mylist, inx);// ну соответственно саписываем их в файл
 
     }
     public static String scan_str() throws NullPointerException  
