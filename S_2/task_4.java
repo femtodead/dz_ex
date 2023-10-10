@@ -16,5 +16,8 @@ public class task_4 {
             System.out.println("Нельзя вводить пустые строки");
             throw new NullPointerException();   
         }
+        
+        
+        System.out.println(string);
     }
 }
